@@ -12,9 +12,15 @@
 -@RestController: 결과 데이터를 JSON으로 내보낸다
 -@RequestMapping(value="/v1"): api 리소스를 버전별로 관리하기 위해 v1을 모든 리소스 주소에 적용되도록 처리한다</br>
 -userJpaRepo.findAll(): JPA를 사용하면 기본으로 CRUD에 대해서는 별다른 설정 없이 쿼리를 질의할 수 있도록 메소드를 지원한다. findAll()은 select msrl, name, uid from user; 쿼리를 내부적으로 실행 시켜준다</br>
--@PostMapping(value = "/user"): user테이블에 데이터를 1건 입력한다. JPA에서 기본적으로 제공하는  메소드이며 user 객체를 전달하면 insert into user(msrl, name, uid) values(null, ?, ?); 쿼리를 내부적으로 실행시켜준다</br>
-
-
+-@PostMapping(value = "/user"): user테이블에 데이터를 1건 입력한다. JPA에서 기본적으로 제공하는  메소드이며 user 객체를 전달하면 insert into user(msrl, name, uid) values(null, ?, ?); 쿼리를 내부적으로 실행시켜준다</br></br>
+-@Builder: builder를 사용할 수 있게 한다</br>
+-@Entity: jpa entity임을 알린다</br>
+-@Getter: user 필드값의 getter를 자동으로 생성한다</br>
+-@NoArgsConstructor: 인자없는 생성자를 자동으로 생성한다</br>
+-@AllArgsConstructor: 인자를 모두 갖춘 생성자를 자동으로 생성한다</br>
+-@Table(name = "user"): user 테이블과 매핑됨을 명시</br>
+-@Id: primaryKey임을 알린다</br>
+-@Column(nullable = false, unique = true, length = 30) // uid column명시, NOTNULL이고 유니크한 필드이며 길이는 30이다</br>
 
 
 
