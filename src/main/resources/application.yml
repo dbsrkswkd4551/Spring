@@ -5,8 +5,14 @@ spring:
   freemarker:
     template-loader-path=classpath: /templates
     suffix: .ftl
-
-
+  datasource:
+    url: jdbc:h2:mem:testdb
+    drivet-class-name: org.h2.Driver
+    data-username: sa
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    properties.hibernate.hbm2dd1.auto: update
+    showSql: true
 
 
 
