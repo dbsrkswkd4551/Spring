@@ -1,4 +1,6 @@
-<h3># Spring Boot Test Project</h3>
+<h2># Spring Boot Test Project</h2>
+
+<h3># Information</h3>
 
 <h4>빌드</h4>
 -소스코드 파일을 컴퓨터에서 실행할 수 있는 독립 소프트웨어 가공물로 변환하는 과정 또는 결과물</br>
@@ -27,4 +29,20 @@
 -Install: 패키지를 로컬 저장소에 설치하는 단계</br>
 -Site: 프로젝트 문서와 사이트 작성, 생성하는 단계</br>
 -Deploy: 만들어진 패키지를 원격 저장소에 릴리즈하는 단계</br>
--일반적으로 
+
+
+<h3># Annotation</h3>
+
+@SpringBootApplication: @Configuration, @EnableAutoConfiguration, @ComponentScan의 기능을 합쳐놓은 것. Spring Boot 프로젝트 생성시 Main 어플리케이션에서 선언되어 있기 때문에 자동으로 스프링의 기본적인 설정이 완료된다</br>
+@Configuration: bean에 대해서 Context에 추가하거나 특정 클래스를 참조해올 수 있다</br>
+@EnableAutoConfiguration: Spring Boot의 자동화 기능을 활성화 시켜준다
+@ComponentScan: 패키지내에 application 컴포넌트가 어디에 위치해있는지 검사한다
+
+
+
+
+
+
+
+
+
