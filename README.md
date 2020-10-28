@@ -41,3 +41,4 @@ ex) @PostMappig("/login",consumes="application/json")</br>
 @RestController: </br>
 -spring4.0 이상은 @Controller와 @ResponseBody의 기능을 수행하는 @RestController를 제공한다 </br>
 
+fds
