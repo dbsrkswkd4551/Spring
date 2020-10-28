@@ -1,6 +1,6 @@
 <h2># Spring Boot Test Project</h2>
 
-<h3>Ch1 프로젝트 생성</h3>
+<h3># Ch1 프로젝트 생성</h3>
 
 <h4>pom.xml 설정</h4>
 -org.springframework.boot:spring-boot-starter-parent: 라이브러리간의 버전 충돌을 막아주는 최적의 버전 조합을 제공해준다. 프로젝트 생성시 pom.xml의 최상단에 자동으로 선언된다</br>
@@ -19,7 +19,7 @@
 보통 application.properties의 설정을 통해 따로 정적 콘텐츠를 모아놓는 디렉토리를 생성하여 관리한다</br></br></br>
 
 
-<h3>Ch2 Controller생성</h3>
+<h3># Ch2 Controller생성</h3>
 
 <h4>annotation</h4>
 @Controller: </br>
@@ -41,4 +41,4 @@ ex) @PostMappig("/login",consumes="application/json")</br>
 @RestController: </br>
 -spring4.0 이상은 @Controller와 @ResponseBody의 기능을 수행하는 @RestController를 제공한다 </br>
 
-fds
+
