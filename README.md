@@ -22,7 +22,7 @@
 <h3>Ch2 Controller생성</h3>
 
 <h4>annotation</h4>
-@Controller: 
+@Controller: </br>
 -해당 클래스를 Controller로 사용한다고 SpringFrameWork에 알린다</br>
 -필요한 비즈니스 로직을 호출하여 전달할 모델과 이동할 뷰 정보를 DispatherServlet에 반환한다. </br>
 -Bean으로 등록한다. </br>
@@ -38,6 +38,6 @@ ex) @RequestMapping("/member/{name}") public String member(@PathVariable("name")
 ex) @PostMappig("/login",consumes="application/json")</br>
 -@ResponseBody: 단순히 데이터를 전송하고자 할 때 사용한다. return 값이 전달되며 String, Map, Json전달이 가능하다</br>
 
-@RestController:
--spring4.0 이상은 @Controller와 @ResponseBody의 기능을 수행하는 @RestController를 제공한다
+@RestController: </br>
+-spring4.0 이상은 @Controller와 @ResponseBody의 기능을 수행하는 @RestController를 제공한다 </br>
 
