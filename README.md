@@ -16,7 +16,7 @@
 ◎ public </br>
 ◎ resources </br>
 ◎ META-INF/resources</br>
-보통 application.properties의 설정을 통해 따로 정적 콘텐츠를 모아놓는 디렉토리를 생성하여 관리한다</br>
+보통 application.properties의 설정을 통해 따로 정적 콘텐츠를 모아놓는 디렉토리를 생성하여 관리한다</br></br></br>
 
 
 <h3>Ch2 Controller생성</h3>
@@ -36,7 +36,7 @@
 ex) @RequestMapping("/member/{name}") public String member(@PathVariable("name") String name)</br>
 -consumes: RequestBody에 담는 타입을 제한할 수 있는 속성이다.(자주 사용X)</br>
 ex) @PostMappig("/login",consumes="application/json")</br>
--@ResponseBody: 단순히 데이터를 전송하고자 할 때 사용한다. return 값이 전달되며 String, Map, Json전달이 가능하다</br>
+-@ResponseBody: 단순히 데이터를 전송하고자 할 때 사용한다. return 값이 전달되며 String, Map, Json전달이 가능하다</br></br></br>
 
 @RestController: </br>
 -spring4.0 이상은 @Controller와 @ResponseBody의 기능을 수행하는 @RestController를 제공한다 </br>
