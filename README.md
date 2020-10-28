@@ -11,7 +11,7 @@
 -스프링부트를 기동하기 위한 main 메소드가 존재한다</br>
 
 <h4>정적리소스(html, jsp 등)</h4>
--Spring Boot 프로젝트는 별도의 커스터마이징이 없는 경우 정적 리소스의 위치는 다음과 같다.
+-Spring Boot 프로젝트는 별도의 커스터마이징이 없는 경우 정적 리소스의 위치는 다음과 같다.</br> 
 ◎ static</br> 
 ◎ public </br>
 ◎ resources </br>
