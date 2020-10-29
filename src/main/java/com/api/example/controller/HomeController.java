@@ -10,6 +10,7 @@ import java.util.List;
 
 @Controller
 public class HomeController {
+    /*
 
     @RequestMapping("/")
     public String home(){
@@ -36,5 +37,7 @@ public class HomeController {
         mav.addObject("list", testList);
         return mav;
     }
+
+     */
 
 }
