@@ -91,3 +91,47 @@ mybatis.mapper-locations=classpath:mappers*.xml (main 패키지의 mapper와 동
 - ERROR : 요청을 처리하는 중 오류가 발생한 경우 표시합니다.</br>
 
 
+<h3># Ch7 JPA</h3>
+
+<h4>ORM(Object-Relational-Mapping</h4>
+-객체가 테이블이 되도록 매핑시켜주는 프레임워크이다</br>
+-프로그램의 복잡도를 줄이고 자바 객체와 쿼리를 분리할 수 있으며 트랜잭션 처리나 기타 데이터베이스 관련 작업들을 좀 더 편리하게 처리할 수 있는 방법</br>
+-SQL Query가 아닌 직관적인 코드로서 데이터를 조작할 수 있다</br>
+-ex)SELECT * FROM MEMBER; ->> MEMBER.findAll()</br>
+
+<h4>JPA</h4>
+-Java Persistence API(자바 ORM 기술에 대한 API 표준 명세)</br>
+-ORM을 사용하기 위한 인터페이스를 모아둔 것</br>
+-자바 어플리케이션에서 관게형 데이터베이스를 사용하는 방식을 정의한 인터페이스</br>
+-ORM에 대한 자바 API 규격이며 Hibernate, OpenJPA 등이 JPA를 구현한 구현체이다</br>
+-Hibernate이외에도 EcipseLinkm DataNucleus, OpenJPA, TopLink등이 있다</br>
+-장점:</br>
+-생산성이 뛰어나고 유지보수가 용이하다</br>
+-객체지향적인 코드로 인해 더 직관적이고 비즈니스 로직에 더 집중할 수 있게 도와준다</br>
+-객체지향적으로 데이터를 관리할 수 있기 때문에 프로그램 구조를 일관되게 유지할 수 있다
+</br>
+-DBMS에 대한 종속성이 줄어든다</br>
+-단점:</br>
+-어렵다
+
+<h4>Hibernate</h4>
+-JPA를 사용하기 위해 JPA를 구현한 ORM프레임워크 중 하나</br>
+-JPA인터페이스를 직접 구현한 라이브러리</br>
+
+
+<h3># Ch8 JUnit</h3>
+
+<h4>JUnit</h4>
+-Java에서 독립된 단위테스트를 지원해주는 프레임워크</br>
+-단정(assert) 메서드로 테스트 케이스의 수행 결과를 판별한다</br>
+-JUnit4 이후부터는 테스트를 지원하는 어노테이션을 제공한다(@Test, @Before, @After 등)</br>
+-@Test 메서드가 호출될 때 마다 새로운 인스턴스를 생성하여 독립적인 테스트가 이루어진다</br>
+-org.springframework.boot:spring-boot-starter-test, 스프링 이니셜라이저로 프로젝트 생성 시 자동으로 생성 </br>
+
+
+
+
+
+
+
+
