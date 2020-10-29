@@ -77,7 +77,17 @@ spring.datasource.password={사용자 비밀번호}</br>
 mybatis.mapper-locations=classpath:mappers*.xml (main 패키지의 mapper와 동일하게 resources 디렉토리에 mapper.xml파일의 경로를 생성해야한다)</br>
 
 <h4>동작 방식</h4>
--요청->Controller->Service->Mapper->쿼리 실행(Mapper.xml)
+-요청->Controller->Service->Mapper->쿼리 실행(Mapper.xml)</br>
 
+
+<h3># Ch5 로그설정</h3>
+
+<h4>logback</h4>
+-레벨 순서: TRACE > DEBUG > INFO > WARN > ERROR</br>
+- TRACE : 추적 레벨은 Debug보다 좀더 상세한 정보를 나타냅니다.</br>
+- DEBUG : 프로그램을 디버깅하기 위한 정보를 표시합니다. (운영서버에서는 표시하지 않도록 설정함)</br>
+- INFO  : 상태변경과 같은 정보성 로그를 표시합니다.</br>
+- WARN  : 처리 가능한 문제, 향후 시스템 에러의 원인이 될 수 있는 경고성 메시지를 나타냄</br>
+- ERROR : 요청을 처리하는 중 오류가 발생한 경우 표시합니다.</br>
 
 
