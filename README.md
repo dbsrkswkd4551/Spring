@@ -60,4 +60,24 @@ ex) @PostMappig("/login",consumes="application/json")</br>
 -ModelAndView 객체 생성, .addObject로 데이터를 입력하고, return을 통해 데이터를 view로 넘겨준다
 
 
+<h3># Ch4 database연동하기</h3>
+
+<h4>커넥션풀(Connection Pool)</h4>
+-풀(Pool)속에 데이터베이스와의 연결(커넥션)들을 미리 만들어 두고 데이터베이스에 접근시 풀에 남아있는 커넥션중 하나를 받아와서 사용한뒤 반환하는 기법.</br>
+-다수의 사용자가 데이터베이스에 접근하는 상황에서 DB 연결과 해제하는 과정을 진행하면 비효율적이다.</br>
+-따라서 커넥션풀을 이용하여 미리 연결을 만들어놓고 사용자가 데이터 요청시 연결을 주는 형식으로 효율적인 DB 연결 및 자원 사용이 가능하다 </br>
+
+<h4>Mysql, Mybatis 연결</h4>
+-mysql:mysql-connector-java:runtime, org.mybatis.spring.boot:mybatis-spring-boot-starter:2.1.3을 pom.xml에 추가한다.
+-application.properties에 다음 코드 입력</br> 
+spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver</br>
+spring.datasource.url=jdbc:mysql://127.0.0.1:3306/{DB이름}?serverTimezone=Asia/Seoul&useSSL=false</br>
+spring.datasource.username={사용자 계정}</br>
+spring.datasource.password={사용자 비밀번호}</br>
+mybatis.mapper-locations=classpath:mappers*.xml (main 패키지의 mapper와 동일하게 resources 디렉토리에 mapper.xml파일의 경로를 생성해야한다)</br>
+
+<h4>동작 방식</h4>
+-요청->Controller->Service->Mapper->쿼리 실행(Mapper.xml)
+
+
 
