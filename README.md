@@ -42,3 +42,22 @@ ex) @PostMappig("/login",consumes="application/json")</br>
 -spring4.0 이상은 @Controller와 @ResponseBody의 기능을 수행하는 @RestController를 제공한다 </br>
 
 
+<h3># Ch3 View 설정 및 JSP 연동하기</h3>
+
+<h4>View</h4>
+-스프링 부트에서도 여러가지 뷰를 사용 가능하다</br>
+-JSP/JSTL</br>
+-Thymeleaf</br>
+-FreeMarker</br>
+-Velocity</br>
+-Groovy Template Engine</br>
+-Tiles</br>
+-톰캣기반 자바 웹어플리케이션에서는 보안상 jsp 위치를 URL로 직접 접근할 수 없는 WEB-INF폴더 아래 위치시킨다</br>
+-동적 파일들의 파일 변경을 자동으로 반영하기 위해서는 org.springframework.boot:spring-boot-devtools를 pom.xml에 추가한다</br>
+
+
+<h4>Controller</h4>
+-ModelAndView 객체 생성, .addObject로 데이터를 입력하고, return을 통해 데이터를 view로 넘겨준다
+
+
+
