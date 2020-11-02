@@ -40,6 +40,16 @@
 -Web Information의 약자로 web에 관련된 정보를 의미한다.</br>
 -WEB-INF폴더는 브라우저에서 직접적으로 접근이 불가능한 경로다. 따라서 브라우저에서 유저의 직접 접근이 어려워 보안성이 높다.</br>
 
+<h4>Model과 ModelAndView의 차이</h4>
+-Model은 파라미터 방식으로 메소드에 (Model model)파라미터를 넣어주고 String 형태로 리턴한다.</br>
+-Model은 값을 넣을 때 .addAttribute()를 사용한다</br>
+-public String Model(Model model){ model.addAttribute("name", "윤근상"); return "model"; }</br></br>
+
+-ModelAndView는 컴포넌트 방식으로 ModelAndView 객체를 생성해서 객체형태로 리턴한다.</br>
+-ModelAndView는 Model과 View를 합쳐놓은 것으로, 값을 넣을 때 .addObject()를 사용하고, setViewName()으로 보낼 곳의 View를 세팅한다.</br>
+-Spring MVC가 @Controller 어노테이션을 지원하기 시작한 이후로 ModelAndView는 잘 사용하지 않는 편이다.</br>
+
+
 <h3># Annotation</h3>
 
 @SpringBootApplication: @Configuration, @EnableAutoConfiguration, @ComponentScan의 기능을 합쳐놓은 것. Spring Boot 프로젝트 생성시 Main 어플리케이션에서 선언되어 있기 때문에 자동으로 스프링의 기본적인 설정이 완료된다</br>
