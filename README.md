@@ -49,6 +49,11 @@
 -ModelAndView는 Model과 View를 합쳐놓은 것으로, 값을 넣을 때 .addObject()를 사용하고, setViewName()으로 보낼 곳의 View를 세팅한다.</br>
 -Spring MVC가 @Controller 어노테이션을 지원하기 시작한 이후로 ModelAndView는 잘 사용하지 않는 편이다.</br>
 
+<h4>Service와 ServiceImpl을 만드는 이유</h4>
+-인터페이스는 객체의 사용방법을 정의한 타입이다. 다형성을 구현하는 중요한 역할을 한다. 즉 개발 코드를 수정하지 않고 사용하는 객체를 변경할 수 있게 해준다.</br>
+-많은 개발자들이 이에 대해 명확한 답변을 하지는 못한다. 나도 고민해보기
+
+
 
 <h3># Annotation</h3>
 
