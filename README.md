@@ -70,7 +70,7 @@
 
 <h3># jsp</h3>
 
-<form:form></form:form></br>
+form:form태그</br>
 : <form id= "command" action="{page_url}" method="post"></form>
 
 
