@@ -70,8 +70,14 @@
 
 <h3># jsp</h3>
 
-form:form태그</br>
-: <form id= "command" action="{page_url}" method="post"></form>
+form:form태그: form id= "command" action="{page_url}" method="post"와 같다</br>
+commandName, ModelAttribute: 폼에 있는 요소의 값을 채우기위한 객체를 찾을때 사용할 이름을 지정한다. 스프링 5버전 이후로는 commandName에서 에러가 발생하기 때문에 ModelAttribute옵션을 사용한다.</br>
+form태그의 요소에 값을 제공할 객체 지정은 컨트롤러에서 하게 된다.</br> 
+ex)model.addAttribute("board", board(객체)); </br>
+public String boardForm(@ModelAttribute board board, Model, model) throws Exception</br>
+public String boardForm(@ModelAttribute("board") board vo, Model model) throws Exception</br>
+board.setTitle 등의 방식으로 객체를 전달해줄 수 있다</br>
+
 
 
 
