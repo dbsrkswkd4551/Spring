@@ -58,6 +58,9 @@
 -폼(POST)->Redirect->서버(GET)</br>
 -따라서 스프링의 RedirectAttributes 클래스를 사용하면 리다이렉트가 발생하기 전에 플래시 속성을 세션에 복사하여(addFlashAttribute()메소드 사용) 저장된 플래시 속성을 세션에서 모델로 이동시킨다. 그러면 헤더에 파라미터를 붙이지 않기 떄문에 URL에 노출되지 않는다.</br>
 
+<h4>유효성 검증</h4>
+-Validator, Hibernate를 사용하여 유효성 검증을 한다.</h4>
+
 
 <h3># Annotation</h3>
 
@@ -78,8 +81,21 @@ public String boardForm(@ModelAttribute board board, Model, model) throws Except
 public String boardForm(@ModelAttribute("board") board vo, Model model) throws Exception</br>
 board.setTitle 등의 방식으로 객체를 전달해줄 수 있다</br>
 
+form:input 태그: input type="text" 태그와 같다</br>
+form:password 태그: input type="password" 태그와 같다</br>
+form:hidden 태그: input type="hidden" 태그와 같다</br>
+path 속성을 통해 modelAttribute로 불러온 객체의 프로퍼티를 지정할 수 있다</br>
 
+form:select 태그: select id name, option value 태그를 합친 것과 같다 items 속성을 통해 option을 지정한다</br>
+form:options 태그: item 속성을 통해 option을 지정한다.</br>
+form:option 태그:  option태그를 직접 지정한다</br>
 
+form:checkboxes 태그: input type-"check box" 태그와 같다</br>
+form:checkbox 태그: 태그를 직접 지정한다</br>
 
+form:radiobuttons 태그: input type="radiobutton" 태그와 같다</br>
+form:radiobutton 태그: 태그를 직접 지정한다.</br>
+
+form:textarea 태그: <textarea>태그 와 같다</br>
 
 
