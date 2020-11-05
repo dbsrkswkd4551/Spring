@@ -99,3 +99,6 @@ form:radiobutton 태그: 태그를 직접 지정한다.</br>
 form:textarea 태그: <textarea>태그 와 같다</br>
 
 
+<h3># HTML</h3>
+-ul: unordered list, 순서 없이 나타내는 리스트</br>
+-ol: ordered list, 숫자 순서대로 나타내는 리스트</br>
