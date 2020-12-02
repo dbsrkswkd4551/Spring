@@ -102,3 +102,14 @@ form:textarea 태그: <textarea>태그 와 같다</br>
 <h3># HTML</h3>
 -ul: unordered list, 순서 없이 나타내는 리스트</br>
 -ol: ordered list, 숫자 순서대로 나타내는 리스트</br>
+
+oracle연결이 안될시
+maven 웹 페이지에서 ojdbc7.jar(12.1.0.2.0) 다운 후 WEB-INF/lib에 넣기<br>
+maven에 dependency 추가
+        <dependency>
+            <groupId>oracle.jdbc</groupId>
+            <artifactId>OracleDriver</artifactId>
+            <version>12.1.0.2.0</version>
+            <scope>system</scope>
+            <systemPath>${basedir}/src/main/webapp/WEB-INF/lib/ojdbc7.jar</systemPath>
+        </dependency>
