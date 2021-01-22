@@ -124,8 +124,9 @@ Dependency 관리를 위해 빌드 도구를 선택한다. 추천하는 도구�
         -통합테스트를 실행하기 전에 실행가능한 jar, war를 패키징하고, spring boot 애플리케이션을 
         실행하고, 빌드정보를 생성한다
         -필요한 라이브러리를 특정 문서(pom.xml)에 정의해 놓으면 내가 사용할 라이브러리 뿐만 아니라
-        해당 라이브러리가 작동한느데 필요한 다른 라이브러리들까지 관리하여 네트워크를 통해
+        해당 라이브러리가 작동하는데 필요한 다른 라이브러리들까지 관리하여 네트워크를 통해
         자동으로 다운 받는다
+        -스프링 부트 의존관계는 org.springframework.boot groupId를 사용한다. 
 
 [참조문서1]: https://goddaehee.tistory.com/199
 [참조문서2]: https://docs.spring.io/spring-boot/docs/2.4.0-SNAPSHOT/maven-plugin/reference/htmlsingle/#using
@@ -135,6 +136,7 @@ Dependency 관리를 위해 빌드 도구를 선택한다. 추천하는 도구�
 
 #### 3.1.2. Gradle
         -Groovy 기반의 빌드도구이다. Maven의 pom.xml을 Gradle로 변환도 가능하며 Maven의 중앙 저장소도 지원하기 때문에 라이브러리를 모두 그대로 가져다 사용 가능하다
+        -compile("org.springframework.boot:groupId)의 형식으로 의존성을 설정한다
         
 [참조문서3]: https://docs.spring.io/spring-boot/docs/2.4.0-SNAPSHOT/maven-plugin/reference/htmlsingle/
 참조
