@@ -149,7 +149,5 @@ Dependency 관리를 위해 빌드 도구를 선택한다. 추천하는 도구�
 starter 의존성은 spring-boot-starter-* 의 네이밍 구조를 를 갖는다
         
 ### 3.2. Structuring Your Code
-
-
-
+기존의 Spring은 web.xml문서를 통해 메타정보를 활용,
 
