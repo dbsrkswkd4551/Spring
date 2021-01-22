@@ -134,6 +134,20 @@ Dependency 관리를 위해 빌드 도구를 선택한다. 추천하는 도구�
 [https://docs.spring.io/spring-boot/docs/2.4.0-SNAPSHOT/maven-plugin/reference/htmlsingle/#using][참조문서2]
 
 #### 3.1.2. Gradle
+        -Groovy 기반의 빌드도구이다. Maven의 pom.xml을 Gradle로 변환도 가능하며 Maven의 중앙 저장소도 지원하기 때문에 라이브러리를 모두 그대로 가져다 사용 가능하다
+        
+[참조문서3]: https://docs.spring.io/spring-boot/docs/2.4.0-SNAPSHOT/maven-plugin/reference/htmlsingle/
+참조
+[https://docs.spring.io/spring-boot/docs/2.4.0-SNAPSHOT/maven-plugin/reference/htmlsingle/][참조문서3]
+
+#### 3.1.3. Ant
+        -긴 스크립트 작성을 해야하기 때문에 안쓰는 추세
+        
+#### 3.1.4. starter
+starter 의존성은 spring-boot-starter-* 의 네이밍 구조를 를 갖는다
+        
+### 3.2. Structuring Your Code
+
 
 
 
