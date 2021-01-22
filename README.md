@@ -129,8 +129,10 @@ Dependency 관리를 위해 빌드 도구를 선택한다. 추천하는 도구�
 
 [참조문서1]: https://goddaehee.tistory.com/199
 [참조문서2]: https://docs.spring.io/spring-boot/docs/2.4.0-SNAPSHOT/maven-plugin/reference/htmlsingle/#using
-참조: [https://goddaehee.tistory.com/199][참조문서1]
-    : [https://docs.spring.io/spring-boot/docs/2.4.0-SNAPSHOT/maven-plugin/reference/htmlsingle/#using][참조문서2]
+참조
+[https://goddaehee.tistory.com/199][참조문서1] </br>
+[https://docs.spring.io/spring-boot/docs/2.4.0-SNAPSHOT/maven-plugin/reference/htmlsingle/#using][참조문서2]
+
 #### 3.1.2. Gradle
 
 
