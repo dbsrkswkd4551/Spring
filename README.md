@@ -118,7 +118,7 @@ maven에 dependency 추가
 ## ch3.Using Spring Boot
 
 ### 3.1. Build System
-Dependency 관리를 위해 빌드 도구를 선택한다. 추천하는 도구는 ** Maven **과 ** Gradle **이 있다.
+Dependency 관리를 위해 빌드 도구를 선택한다. 추천하는 도구는 **Maven**과 **Gradle**이 있다.
 
 
 
