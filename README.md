@@ -127,9 +127,10 @@ Dependency 관리를 위해 빌드 도구를 선택한다. 추천하는 도구�
         해당 라이브러리가 작동한느데 필요한 다른 라이브러리들까지 관리하여 네트워크를 통해
         자동으로 다운 받는다
 
-[참조문서1]: https://goddaehee.tistory.com/199 
+[참조문서1]: https://goddaehee.tistory.com/199
+[참조문서2]: https://docs.spring.io/spring-boot/docs/2.4.0-SNAPSHOT/maven-plugin/reference/htmlsingle/#using
 참조: [https://goddaehee.tistory.com/199][참조문서1]
-
+    : [https://docs.spring.io/spring-boot/docs/2.4.0-SNAPSHOT/maven-plugin/reference/htmlsingle/#using][참조문서2]
 #### 3.1.2. Gradle
 
 
