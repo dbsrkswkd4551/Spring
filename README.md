@@ -205,7 +205,16 @@ const calcSum = Function (a, b, c) { const result = a + b + c; return result;}
 요소노드는 자바스크립트에서 element객체로 취급하며 요소의 데이터를 변경하거나 CSS클래스를 변경하는 등의 작업이 가능하다. 
 DOM과 node의 차이??
 
+Pandas는 열 중심 데이터 분석 API,
+from __future__ import print_function
+import pandas as pd
+pd.__version__
+Pandas의 기본 데이터 구조는 두 가지 클래스로 구현된다
+DataFrame은 행 및 이름 지정된 열이 포함된 관계형 데이터 테이블
+Series는 하나의 열이다. DataFrame에는 하나 이상의 Series와 각 Series의 이름이 포함된다
 
+Series를 만드는 법은 Series 객체를 생성하는 것이다
+pd.Series(['one', 'two', 'three'])
 
 
 
