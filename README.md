@@ -177,15 +177,19 @@ Series는 하나의 열이다. DataFrame에는 하나 이상의 Series와 각 Se
 Series를 만드는 법은 Series 객체를 생성하는 것이다
 pd.Series(['one', 'two', 'three'])
 
-DataFrame은 
+DataFrame 객체는 열 이름과 매핑되는 dict를 각각의 Series에 전달하여 만들 수 있다
+city_names = pd.Series(['San Francisco', 'San Jose', 'Sacramento'])
+population = pd.Series([852469, 1015785, 485199])
+pd.DataFrame({'City name':city_names, 'Poulation':population})
+하지만 대부분의 경우 전체 파일을 DataFrame으로 로드한다
+pd.read_csv("url", sep=",")
 
+DataFrame.head(), tail(): DataFrame 레코드 중 처음 몇개, 맨뒤 몇개만 표시한다. 데이터가 잘 로드되었는지 확인할때 사용하면 유용하다
+DataFrame.hist('col'): 막대그래프로 한 열에서 값의 분포를 알 수 있다
+DataFrame['column'] = pd.Series(....) 등으로 DataFrame수정이 가능하다
 
-
-
-
-
-
-
+cities['Is wide and has saint name'] = (cities['Area square miles'] > 50) & cities['City name'].apply(lambda name: name.startswith('San'))
+cities
 
 
 
