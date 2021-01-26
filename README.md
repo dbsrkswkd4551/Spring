@@ -210,18 +210,18 @@ DOM과 node의 차이??
 
 
 ### Pandas
+        Pandas는 열 중심 데이터 분석 API,
+        from __future__ import print_function
+        import pandas as pd
+        pd.__version__
+        Pandas의 기본 데이터 구조는 두 가지 클래스로 구현된다
+        DataFrame은 행 및 이름 지정된 열이 포함된 관계형 데이터 테이블
+        Series는 하나의 열이다. DataFrame에는 하나 이상의 Series와 각 Series의 이름이 포함된다
 
-Pandas는 열 중심 데이터 분석 API,
-from __future__ import print_function
-import pandas as pd
-pd.__version__
-Pandas의 기본 데이터 구조는 두 가지 클래스로 구현된다
-DataFrame은 행 및 이름 지정된 열이 포함된 관계형 데이터 테이블
-Series는 하나의 열이다. DataFrame에는 하나 이상의 Series와 각 Series의 이름이 포함된다
+        Series를 만드는 법은 Series 객체를 생성하는 것이다
+        pd.Series(['one', 'two', 'three'])
 
-Series를 만드는 법은 Series 객체를 생성하는 것이다
-pd.Series(['one', 'two', 'three'])
-
+        DataFrame은 
 
 
 
