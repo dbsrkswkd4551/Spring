@@ -194,6 +194,8 @@ UI테스트
 사용성 테스트 과정, 계획 수립, 목적 평가 내용 분석 사용 환경 사용자 등을 분석한다. 테스트 설계, 진행 절차 작성, 테스트 참가자 결정, 테스트 항목의 평가 방향 결정, 다양한 평가 방법으로 설계한다. 테스트 실행 설계된 진행 절차대로 진행한다. 결과 보고서 작성, 평가에 사용된 데이터를 분류하고 분석하며 결과를 통해 문제점을 분석한 후 수정에 필요한 의견을 포함하여 보고서를 작성함으로써 피드백을 통해 오류를 수정하도록 한다.
 테스트 케이스의 작성, 테스트 케이스는 어떤 실행 환경에서 어떤 입력 값들을 부여하여 원하는 결과가 정확히 나오는지를 판단할 수 있도록 작성한다.
 유효성 검사, HTML 문서 작성 후 문법 등 지켜야 할 많은 규칙들이 있다. HTML의 문법은 생각보다 복잡해서 완전히 외우기 쉽지 않고 익숙해진 후에도 간혹 실수를 하게 된다. 따라서 가장 좋은 방법은 유효성 검사 프로그램을 사용하여 자신이 작성하고 있는 HTML 문서를 최대한 자주 검사하는 것이다.        
+        
+#jj
 화살표 함수는 함수를 간략히 기술할 수 있다. this를 묶는 것이 가능하다. const calcSum = (a, b, c) => { const result = a + b + c; return result;}; 화살표 함수의 정의가 한 줄인 경우 {}와 return을 생략할 수 있다
 const calcSum = Function (a, b, c) { const result = a + b + c; return result;}      
 함수의 파라미터 초깃값 설정, function calcSum(price, tax = 0.1) { const result = price + price * tax } calcSum(10000) 결과: 11000 calucSum(10000, 0.5) 결과: 150000
@@ -205,6 +207,8 @@ const calcSum = Function (a, b, c) { const result = a + b + c; return result;}
 요소노드는 자바스크립트에서 element객체로 취급하며 요소의 데이터를 변경하거나 CSS클래스를 변경하는 등의 작업이 가능하다. 
 DOM과 node의 차이??
 
+
+#Pandas
 Pandas는 열 중심 데이터 분석 API,
 from __future__ import print_function
 import pandas as pd
