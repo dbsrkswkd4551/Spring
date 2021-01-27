@@ -191,8 +191,6 @@ DataFrame['column'] = pd.Series(....) 등으로 DataFrame수정이 가능하다
 cities['Is wide and has saint name'] = (cities['Area square miles'] > 50) & cities['City name'].apply(lambda name: name.startswith('San'))
 cities
 
-기회와 행운이 찾아왔을때 그것을 잡을 상태가 아니게 될 수 있다. 항상 최고의 컨디션을 유지할 것.
-
 ### tensorflow
 import tensorflow af tf
 import matplotlib.pyplot as plt #데이터 세트 시각화
@@ -200,8 +198,6 @@ import numpy as np #저수준 숫자 Python 라이브러리
 import pandas as pd #고수준 숫자 Python 라이브러리
 
 파이썬-Pandas-tensorflow-
-
-
 
 
 
